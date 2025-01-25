@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+    <div class="container" id="form-container">
+      <div class="left">
+        <h2>Stay updated!</h2>
+        <p class="description">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <div class="features">
+          <div class="feature">
+            <img src="assets/images/icon-list.svg" alt="" />
+            <p>Product discovery and building what matters</p>
+          </div>
+          <div class="feature">
+            <img src="assets/images/icon-list.svg" alt="" />
+            <p>Measuring to ensure updates are a success</p>
+          </div>
+          <div class="feature">
+            <img src="assets/images/icon-list.svg" alt="" />
+            <p>And much more!</p>
+          </div>
+        </div>
+        <form action="" novalidate id="myForm">
+          <label for="email">Email address</label>
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@company.com"
+          />
+
+          <input
+            type="submit"
+            value="Subscribe to monthly newsletter"
+            class="btn"
+          />
+        </form>
+      </div>
+      <div class="right">
+        <img src="assets/images/illustration-sign-up-desktop.svg" alt="" />
+      </div>
+    </div>
+    <!-- Sign-up form end -->
+    <!-- Success message start -->
+    <div class="success-message hidden" id="success-container">
+      <img src="assets/images/icon-list.svg" alt="">
+      <h2>Thanks for subscribing!</h2>
+      <p class="description">
+        A confirmation email has been sent to <span id="email-confirm"></span>. Please open
+        it and click the button inside to confirm your subscription.
+      </p>
+      <div class="btn" id="dismiss-btn">Dismiss message</div>
+    </div>
+    <!-- Success message end -->
+  </body>
+</html>
